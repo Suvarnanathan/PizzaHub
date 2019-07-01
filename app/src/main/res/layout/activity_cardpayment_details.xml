@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardpaymentDetails">
+
+
+    <TextView
+        android:id="@+id/crdnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="CARD NUMBER"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/enternum"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/crdnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter CARD NUMBER"/>
+    <TextView
+        android:id="@+id/exdate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/enternum"
+        android:layout_marginTop="20dp"
+        android:text="EXPIRATION DATE"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/enterdate"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/exdate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="MM/YY"/>
+    <TextView
+        android:id="@+id/cvcode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/exdate"
+        android:layout_marginTop="180dp"
+        android:text="CV CODE"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/entercvcode"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="220dp"
+        android:layout_below="@id/cvcode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="CVC"/>
+    <TextView
+        android:id="@+id/ownername"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/entercvcode"
+        android:layout_marginTop="20dp"
+        android:text="CARD OWNER"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/entercardowner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ownername"
+        android:layout_marginTop="20dp"
+        android:hint="Card Owner Name"/>
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entercardowner"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="200dp"
+        android:paddingRight="20dp"
+        android:text="pay"
+        android:textSize="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/creditcard"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/capture3" />
+
+
+</RelativeLayout>

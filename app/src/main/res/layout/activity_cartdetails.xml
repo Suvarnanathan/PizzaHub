@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cartdetails">
+
+ <TextView
+     android:id="@+id/PizzaQTY"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:hint="Total Price"
+     android:layout_toRightOf="@id/totalprice"
+     android:padding="10dp"
+     android:layout_marginLeft="50dp"
+     android:text="5"/>
+
+ <TextView
+     android:id="@+id/prices"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/PizzaQTY"
+     android:padding="40dp"
+     android:text="1000"/>
+ <Button
+     android:id="@+id/totalprice"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="26dp"
+     android:layout_below="@id/prices"
+     android:hint="Total Price"
+     android:padding="20dp" />
+
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/totalprice"
+        android:layout_marginTop="50dp"
+        android:text="Confirm"/>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@id/confirm"
+        android:layout_marginTop="50dp"
+        android:text="Cancel"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancel"
+        android:padding="40dp"/>
+
+
+
+
+</RelativeLayout>
